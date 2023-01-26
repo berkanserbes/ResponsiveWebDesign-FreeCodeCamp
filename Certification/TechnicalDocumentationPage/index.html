@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Shell Script Documentation</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -47,7 +47,7 @@
           </p>
         </article>
       </section>
-      <section class="main-section" id="What_is_Shell">
+      <section class="main-section" id="What_is_Shell?">
         <header>What is Shell?</header>
         <article>
           <p>
@@ -145,16 +145,18 @@
             use in your shell scripts -
           </p>
           <ul>
-            <li>$0 --> The filename of the current script</li>
-            <li>$# --> The number of arguments supplied to a script.</li>
-            <li>$? --> The exit status of the last command executed.</li>
+            <li>$0 &#8594; The filename of the current script</li>
+            <li>$# &#8594; The number of arguments supplied to a script.</li>
+            <li>$? &#8594; The exit status of the last command executed.</li>
             <li>
-              $$ --> The process number of the current shell. For shell scripts,
-              this is the process ID under which they are executing.
+              $$ &#8594; The process number of the current shell. For shell
+              scripts, this is the process ID under which they are executing.
             </li>
-            <li>$! --> The process number of the last background command.</li>
             <li>
-              $@ --> All the arguments are individually double quoted. If a
+              $! &#8594; The process number of the last background command.
+            </li>
+            <li>
+              $@ &#8594; All the arguments are individually double quoted. If a
               script receives two arguments, $@ is equivalent to $1 $2.
             </li>
           </ul>
@@ -632,7 +634,7 @@
             The name of your function is <b>function_name</b>, and that's what
             you will use to call it from elsewhere in your scripts. The function
             name must be followed by parentheses, followed by a list of commands
-            enclosed within braces. /p>
+            enclosed within braces.
           </p>
           <h5>Example</h5>
           <pre>
