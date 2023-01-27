@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  background-color: black;
+  z-index: 2;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 3rem;
+}
+
+.nav-list a {
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.nav-list a:hover {
+  background-color: white;
+  color: black;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section > h1 {
+  font-size: 4rem;
+}
+
+#welcome-section > p {
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 2.5rem;
+}
+
+#projects {
+  text-align: center;
+  background-color: blue;
+  padding: 10rem 2rem;
+}
+
+#projects-section-header {
+  font-size: 2rem;
+  color: white;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid black;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-card {
+  background: gray;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: gray;
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 3rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: gray;
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: red;
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100;
+  height: 30vh;
+  padding: 0 1rem;
+  background-color: gray;
+}
+
+.contact-section-header > h2 {
+  font-size: 2rem;
+  margin-top: 8rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(-8px);
+}
+
+footer {
+  text-align: center;
+  width: 100;
+  height: 1vh;
+}
