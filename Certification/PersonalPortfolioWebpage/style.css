@@ -25,6 +25,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 img {
@@ -82,7 +83,7 @@ img {
 
 #projects {
   text-align: center;
-  background-color: blue;
+  background-color: black;
   padding: 10rem 2rem;
 }
 
@@ -91,7 +92,7 @@ img {
   color: white;
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid yellow;
 }
 
 .projects-grid {
@@ -105,18 +106,29 @@ img {
 }
 
 .project-card {
-  background: gray;
+  background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
 
 .code {
-  color: gray;
+  color: black;
   transition: color 0.3s ease-out;
+  visibility: hidden;
 }
 
-.project:hover .code {
-  color: #ff7f50;
+.project-card:hover .code {
+  visibility: visible;
+  color: black;
+}
+
+.project-card:hover {
+  background-color: red;
+}
+
+.project-card:hover .project-title {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
 }
 
 .project-image {
@@ -128,6 +140,7 @@ img {
 .project-title {
   font-size: 1.5rem;
   padding: 0.5rem;
+  border-top: 3px solid black;
 }
 
 .btn {
@@ -138,12 +151,12 @@ img {
 
 .btn-show-all {
   font-size: 2rem;
-  background: gray;
-  transition: background 0.3s ease-out;
+  background: azure;
+  transition: red 0.3s ease-out;
 }
 
 .btn-show-all:hover {
-  background: red;
+  background-color: red;
 }
 
 .btn-show-all:hover > i {
@@ -159,7 +172,7 @@ img {
   width: 100;
   height: 30vh;
   padding: 0 1rem;
-  background-color: gray;
+  background-color: azure;
 }
 
 .contact-section-header > h2 {
@@ -180,6 +193,7 @@ img {
 .contact-details {
   font-size: 2.4rem;
   transition: transform 0.3s ease-out;
+  margin-bottom: 2rem;
 }
 
 .contact-details:hover {
@@ -187,7 +201,29 @@ img {
 }
 
 footer {
+  font-size: 1.2rem;
+  padding: 1rem 0;
   text-align: center;
-  width: 100;
-  height: 1vh;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  #welcome-section {
+    text-align: justify;
+    overflow-wrap: break-word;
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #navbar {
+    justify-content: center;
+  }
+  .nav-list {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 636px) {
 }
