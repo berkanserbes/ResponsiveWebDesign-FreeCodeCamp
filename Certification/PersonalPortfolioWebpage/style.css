@@ -216,6 +216,30 @@ footer {
   }
 }
 
+@media screen and (max-width: 636px) {
+  #projects-section-header > h2 {
+    font-size: 1.5rem;
+    border-bottom: 0.1rem solid yellow;
+  }
+
+  .contact-section {
+    height: 60vh;
+    padding-bottom: 1rem;
+  }
+
+  .contact-section-header > h2 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-details {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #navbar {
     justify-content: center;
@@ -225,5 +249,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 636px) {
+@media screen and (max-width: 360px) {
+  .nav-list a {
+    font-size: 1.5rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
